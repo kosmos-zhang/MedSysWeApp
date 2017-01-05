@@ -1,0 +1,46 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="section">
+            <view class="flex-wrp" style="{{input_wrp_style}}" >
+                <view class="flex-input">
+                    <input class="form-input"  placeholder="输入药品名" auto-focus/>
+                </view>
+                <view class="flex-button">
+                    <button type="primary" class="form-button" bindtap="showinput">扫码</button>
+                </view>
+            </view>
+            <view class="flex-wrp" style="{{scan_wrp_style}}">
+                <view class="flex-input">
+                    <button class="form-button" bindtap="scanbarcode" >扫描商品条形码添加药品</button>
+                </view>
+                <view class="flex-button">
+                    <button type="primary" class="form-button" bindtap="showinput">手输</button>
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <scroll-view scroll-y="true" style="height: 350px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+                <view id="green" class="scroll-view-item bc_green"></view>
+                <view id="red"  class="scroll-view-item bc_red">This is the second item</view>
+                <view id="yellow" class="scroll-view-item bc_yellow">This is the third item</view>
+                <view id="blue" class="scroll-view-item bc_blue">This is the fourth item</view>
+            </scroll-view>
+        </view>
+        <view class="section">
+            <view class="flex-wrp" style="flex-direction:row;margin-top:5px;">
+                <view class="flex-act-button">
+                    <button type="primary" class="act-button" bindtap="drugreact">安全用药</button>
+                </view>
+                <view class="flex-act-button">
+                    <button type="default" class="act-button" bindtap="drugdesc">说明书</button>
+                </view>
+                <view class="flex-act-button">
+                    <button type="warn" class="act-button" bindtap="drugremind">服药提醒</button>
+                </view>
+                <view class="flex-act-button">
+                    <button class="act-button" bindtap="drugdel">删除</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

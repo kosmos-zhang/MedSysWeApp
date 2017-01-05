@@ -1,0 +1,47 @@
+.flex-wrp{
+    display:flex;
+    background-color: #FFFFFF;
+    margin-bottom: 3px;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+}
+.flex-input{
+    width: 80%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.flex-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 60px;
+}
+.flex-act-button{
+    margin: 2px;
+    width: 25%;
+}
+.scroll-view_H{
+    white-space: nowrap;
+}
+.scroll-view-item{
+    height: 150px;
+}
+.scroll-view-item_H{
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+}
+.form-input{
+    border-width: 1px;
+    border-color: black;
+    border-style: ridge;
+    height: 29px;
+}
+.form-button{
+    font-size: 12.5px;
+    width: 100%;
+}
+.act-button{
+    font-size: 12px;
+}
