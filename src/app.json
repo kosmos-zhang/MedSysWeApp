@@ -1,13 +1,13 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/medicinekit/kit",
     "pages/logs/logs",
-    "pages/medicinekit/kit"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "全民药箱",
+    "navigationBarTitleText": "正胜小药师",
     "navigationBarTextStyle":"black"
   }
 }
