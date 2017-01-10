@@ -4,13 +4,13 @@
       <input class="form-input"  placeholder="输入药品名" auto-focus/>
     </view>
     <view class="flex-button">
-      <button class="scanbutton" bindtap="scanbarcode">扫码</button>
+      <image src="../../images/scanbarcode.png" style="width:60px;height:30px;" mode="scaleToFill" bindtap="scanbarcode"></image>
     </view>
   </view>
 </view>
 <view class="content">
   <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view wx:for="{{medinines}}" class="med-item">
+    <view wx:for="{{medinines}}" wx:key="*this" class="med-item">
       {{item}}
     </view>
   </scroll-view>
