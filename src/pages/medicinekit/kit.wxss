@@ -20,16 +20,53 @@
   margin-left: 5px;
   height: 100%;
 }
+.form-input{
+    border-width: 1px;
+    border-color: #FFFF6B;
+    border-style: ridge;
+    border-radius: 10px;
+    height: 29px;
+}
 .scanbutton {
   font-size: 12.5px;
   width: 100%;
   background-image: "url(../../images/scanbarcode.png)";
 }
-.med-item{
-  margin-left: 2px;
-  display: block;
+.container{
+  padding-top: 0;
 }
-
+.item{
+  margin-left: 2px;
+  width: 100%;
+  height: 60rpx;
+  position: relative; 
+  display: flex;
+  margin-top: 10rpx;
+}
+.item .number-wrapper{
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item .remove {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  justify-content: center;
+  align-items: center;
+  background-color:red;
+}
+.number-wrapper .name{
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    font-size: 30rpx;
+    overflow: hidden;
+    flex: 1;
+}
 .top-nav{
     white-space: nowrap;
     width: 95%;
@@ -54,32 +91,4 @@
     margin-left: 5px;
     margin-right: 5px;
     width: 60px;
-}
-.flex-act-button{
-    margin: 2px;
-    width: 25%;
-}
-.scroll-view_H{
-    white-space: nowrap;
-}
-.scroll-view-item{
-    height: 250px;
-}
-.scroll-view-item_H{
-    display: inline-block;
-    width: 100%;
-    height: 250px;
-}
-.form-input{
-    border-width: 1px;
-    border-color: black;
-    border-style: ridge;
-    height: 29px;
-}
-.form-button{
-    font-size: 12.5px;
-    width: 100%;
-}
-.act-button{
-    font-size: 12px;
 }

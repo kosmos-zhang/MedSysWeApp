@@ -1,7 +1,7 @@
 <view class="toolbar">
   <view class="top-bar">
     <view class="flex-input">
-      <input class="form-input"  placeholder="输入药品名" auto-focus/>
+      <input class="form-input" placeholder="输入药品名" auto-focus/>
     </view>
     <view class="flex-button">
       <image src="../../images/scanbarcode.png" style="width:60px;height:30px;" mode="scaleToFill" bindtap="scanbarcode"></image>
@@ -10,8 +10,13 @@
 </view>
 <view class="content">
   <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view wx:for="{{medinines}}" wx:key="*this" class="med-item">
-      {{item}}
+    <view class="container">
+      <view wx:for="{{cardTeams}}" wx:for-item="cardTeam" id="{{cardTeam.id}}" class="item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{cardTeam.right}}px">
+        <view class="number-wrapper">
+          <text class="name">{{cardTeam.name}}</text>
+        </view>
+        <view class="remove" data-id="{{cardTeam.id}}" bindtap="delItem"><view>删除</view></view>
+      </view>
     </view>
   </scroll-view>
 </view>
